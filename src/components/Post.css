@@ -1,0 +1,42 @@
+.container {
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  background: white;
+}
+
+.post-header {
+  display: flex;
+  padding: 10px;
+}
+
+.post-header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.author strong {
+  font-size: 14px;
+}
+
+.author span {
+  font-size: 11px;
+  color: #9a9a9a;
+}
+
+.post p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.post hr {
+  border: 1px solid #eee;
+  margin: 5px 0;
+}
