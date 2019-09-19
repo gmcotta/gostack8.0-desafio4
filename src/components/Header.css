@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 42px;
+  background: #4a90e2;
+  height: 64px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.header img {
+  width: 121px;
+  height: 24px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile span {
+  padding: 0 10px;
+}
+
+.profile img {
+  width: 24px;
+  height: 24px;
+}

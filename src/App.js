@@ -1,15 +1,10 @@
 import React from "react";
+import Header from "./components/Header";
 
 import "./App.css";
-import profile from "./assets/profile_f_2.jpg";
 
 function App() {
-  return (
-    <>
-      <h1>Hello Rocketseat</h1>
-      <img src={profile} />
-    </>
-  );
+  return <Header />;
 }
 
 export default App;
