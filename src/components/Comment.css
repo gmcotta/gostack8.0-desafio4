@@ -1,0 +1,16 @@
+.comment {
+  display: flex;
+}
+
+.content {
+  background: #eee;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.comment img {
+  height: 32px;
+  border-radius: 50%;
+}

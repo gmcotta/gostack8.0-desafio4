@@ -4,6 +4,8 @@ import "./Post.css";
 
 import avatar3 from "../assets/avatar_m_1.jpg";
 
+import Comment from "./Comment";
+
 class Post extends Component {
   render() {
     return (
@@ -20,12 +22,10 @@ class Post extends Component {
           <hr />
         </div>
 
-        <ul className="comments">
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
+        <ul>
+          <li>
+            <Comment />
+          </li>
         </ul>
       </div>
     );

@@ -14,6 +14,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  justify-self: center;
 }
 
 .author {
@@ -39,4 +40,12 @@
 .post hr {
   border: 1px solid #eee;
   margin: 5px 0;
+}
+
+.container ul {
+  padding: 10px;
+}
+
+.container ul li {
+  list-style: none;
 }
