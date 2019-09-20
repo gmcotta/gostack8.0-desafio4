@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import avatarDiego from "../assets/avatar_diego.png";
-
 import "./Comment.css";
+
+import avatarDiego from "../assets/avatar_diego.png";
 
 class Comment extends Component {
   render() {

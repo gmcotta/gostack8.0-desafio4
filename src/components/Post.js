@@ -5,7 +5,7 @@ import "./Post.css";
 import avatar3 from "../assets/avatar_m_1.jpg";
 
 import Comment from "./Comment";
-
+/*
 class Post extends Component {
   render() {
     return (
@@ -30,6 +30,35 @@ class Post extends Component {
       </div>
     );
   }
+}
+*/
+
+function Post({ data }) {
+  console.log(data);
+  console.log();
+  return (
+    <div className="container">
+      <div className="post">
+        <div className="post-header">
+          <img src={data.author.avatar} />
+          <div className="author">
+            <strong>{data.author.name}</strong>
+            <span>{data.date}</span>
+          </div>
+        </div>
+        <p>{data.content}</p>
+        <hr />
+      </div>
+
+      <ul>
+        <li>
+          <Comment />
+        </li>
+      </ul>
+    </div>
+  );
+
+  //  return <></>;
 }
 
 export default Post;

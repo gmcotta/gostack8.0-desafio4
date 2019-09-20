@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
-import avatarDiego from "../assets/avatar_diego.jpg";
+import avatarDiego from "../assets/avatar_diego.png";
 import avatar1 from "../assets/avatar_f_1.jpg";
 import avatar2 from "../assets/avatar_f_2.jpg";
 import avatar3 from "../assets/avatar_m_1.jpg";
 import avatar4 from "../assets/avatar_m_2.jpg";
+
+import Post from "./Post";
 
 class PostList extends Component {
   state = {
@@ -34,9 +36,8 @@ class PostList extends Component {
           avatar: avatar1
         },
         date: "04 Jun 2019",
-        content: `Fala galera, beleza?
-
-        Estou fazendo o Bootcamp GoStack da Rocketseat e está sendo muito massa! Alguém mais aí fazendo, comenta na publicação para trocarmos uma ideia.`,
+        content:
+          "Fala galera, beleza?\n\nEstou fazendo o Bootcamp GoStack da Rocketseat e está sendo muito massa! Alguém mais aí fazendo, comenta na publicação para trocarmos uma ideia.",
         comments: [
           {
             id: 1,
@@ -60,6 +61,17 @@ class PostList extends Component {
       }
     ]
   };
+
+  render() {
+    //console.log(this.state.posts);
+    return (
+      <>
+        {this.state.posts.map(post => (
+          <Post key={post.id} data={post} />
+        ))}
+      </>
+    );
+  }
 }
 
 export default PostList;
