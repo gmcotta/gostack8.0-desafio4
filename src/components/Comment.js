@@ -4,6 +4,7 @@ import "./Comment.css";
 
 import avatarDiego from "../assets/avatar_diego.png";
 
+/*
 class Comment extends Component {
   render() {
     return (
@@ -22,6 +23,20 @@ class Comment extends Component {
       </div>
     );
   }
+}
+*/
+
+function Comment({ data }) {
+  return (
+    <li className="comment">
+      <img src={data.author.avatar} />
+      <div className="content">
+        <p>
+          <strong>{data.author.name}</strong>&nbsp;{data.content}
+        </p>
+      </div>
+    </li>
+  );
 }
 
 export default Comment;

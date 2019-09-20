@@ -34,8 +34,8 @@ class Post extends Component {
 */
 
 function Post({ data }) {
-  console.log(data);
-  console.log();
+  console.log(data.comments);
+
   return (
     <div className="container">
       <div className="post">
@@ -51,9 +51,9 @@ function Post({ data }) {
       </div>
 
       <ul>
-        <li>
-          <Comment />
-        </li>
+        {data.comments.map(comment => (
+          <Comment key={comment.id} data={comment} />
+        ))}
       </ul>
     </div>
   );
